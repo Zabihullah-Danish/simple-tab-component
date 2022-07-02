@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/style.css" rel="stylesheet" />
+    <title>Zabihullah Danish Profile</title>
+</head>
+<body>
+    <div class="container max-w-5xl mx-auto border p-3 bg-slate-100 shadow-md mt-20 h-[800px]">
+        <div class="">
+            <div class="flex flex-row border bg-slate-200">
+                <button onclick="aboutShow()" class="p-2 bg-blue-500 text-white border">About</button>
+                <button onclick="skillsToggle()" class="p-2 bg-blue-500 text-white border">Skills</button>
+                <button onclick="contactShow()" class="p-2 bg-blue-500 text-white border">Contact</button>
+            </div>
+            <div class="flex flex-row">
+                <div class="flex flex-col w-3/6">
+                    <div id="about" class="border shadow-md mt-2">
+                        <p class="text-justify p-5">Talented web development professional highly experienced with wide range of
+                            programming languages and design tools. Skilled at producing clean, secure code based on
+                            individual client's needs. Focused on delighting customers with innovative, user-friendly
+                            designs.</p>
+                    </div>
+                    <div id="skills" style="display: none;"  class="border shadow-md mt-2">
+                        <h1 class="text-xl p-5">Programming languages skills</h1>
+                        <ul class="p-5">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div id="contact" style="display: none;"  class="border shadow-md mt-2">
+                        <h1 class="text-xl p-2">Contact details</h1>
+                        <ul class="pl-5">
+                            <li>zabihullahdanish01@gmail.com</li>
+                            <li>+93728224181</li>
+                            <li><a href="https://github.com/zabihullah-danish">https://github.com/zabihullah-danish</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-3/6">
+                    <div class="p-5 overflow-hidden mx-auto">
+                        <img class="object-contain" src="./assets/danish.jpg" alt="loading image">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        let about = document.getElementById('about');
+        let skills = document.getElementById('skills');
+        let contact = document.getElementById('contact');
+        function aboutShow(){
+            about.style.display = "block";
+            skills.style.display = "none";
+            contact.style.display = "none";
+        }
+
+        function skillsToggle(){
+          
+            skills.style.display = "block";
+            about.style.display = "none"
+            contact.style.display = "none";
+            
+        }
+
+        function contactShow(){
+            contact.style.display = "block";
+            about.style.display = "none";
+            skills.style.display = "none";
+
+        }
+
+
+       
+    </script>
+
+</body>
+</html>
